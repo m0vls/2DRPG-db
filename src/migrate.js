@@ -11,7 +11,7 @@ try {
   console.log('Migration applied successfully');
 } catch (err) {
   console.error('Migration failed:', err.message);
-  process.exitCode = 1;
+  process.exitCode = 2;
 } finally {
   await pool.end();
 }
